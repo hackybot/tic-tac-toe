@@ -1,0 +1,114 @@
+body {
+  font-family: Avenir, Arial, Cursive;
+  margin: 0;
+  background-color: #212121;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+}
+
+.container {
+  width: 315px;
+  margin: auto;
+}
+
+.counter-selection {
+  padding-top: 1em;
+  height: 13em;
+  background-color: white;
+  text-align: center;
+  display: none;
+}
+
+.difficulty-container {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.counter-selection select, label {
+    display: inline-block;
+}
+
+
+.selection-btn {
+  outline: none;
+  background: none;
+  border: 0;
+}
+
+canvas {
+  cursor: pointer;
+  background-color: #212121;
+  margin: 0;
+
+}
+
+.canvas-result{
+  background-color: #00e676;
+}
+
+
+.game-board {
+  display: none;
+}
+
+.top-row {
+  border-bottom: 1px solid #fafafa;
+}
+
+.middle-row {
+  border-bottom: 1px solid #fafafa;
+}
+
+#two, #five, #eight {
+  border-left: 1px solid #fafafa;
+  border-right: 1px solid #fafafa;
+}
+
+
+.play-button {
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+
+.results {
+  text-align: center;
+  border: 3px solid #616161;
+  border-radius: 5px;
+  padding: 1em;
+  display: none;
+}
+
+.results h1 {
+  margin: 0;
+}
+
+.win {
+  color: #00e676;
+}
+
+.lose {
+  color: #ff5252;
+}
+
+.draw {
+  color: #536dfe;
+}
+
+footer a {
+  position: absolute;
+  text-align: right;
+  bottom: 0px;
+  right: 5px;
+  color: #fafafa;
+  font-size: 0.8em;
+  text-decoration: none;
+}

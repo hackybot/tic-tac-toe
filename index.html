@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic-Tac-Toe</title>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Game Code -->
+  <script src="js/main.js"></script>
+
+</head>
+<body>
+
+  <h1> Tic-Tac-Toe </h1>
+
+
+
+
+
+  <!-- Counter Selection -->
+  <div class="counter-selection container">
+    <p>What will you play as?</p>
+
+    <!-- X -->
+    <button class="selection-btn"><canvas id="X" width="100" height="100"></canvas></button>
+
+    <!-- O -->
+    <button class="selection-btn"><canvas id="O" width="100" height="100"></canvas></button>
+
+    <div class="difficulty-container">
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="unbeatable">Unbeatable</option>
+        <option value="easy">Easy</option>
+      </select>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- Game Board -->
+  <div class="game-board container">
+    <div class="top-row">
+      <canvas id="one" width="100" height="100"></canvas>
+      <canvas id="two" width="100" height="100"></canvas>
+      <canvas id="three" width="100" height="100"></canvas>
+    </div> <!-- top row -->
+
+    <div class="middle-row">
+      <canvas id="four" width="100" height="100"></canvas>
+      <canvas id="five" width="100" height="100"></canvas>
+      <canvas id="six" width="100" height="100"></canvas>
+    </div><!-- Middle-row -->
+
+    <div class="bottom-row">
+      <canvas id="seven" width="100" height="100"></canvas>
+      <canvas id="eight" width="100" height="100"></canvas>
+      <canvas id="nine" width="100" height="100"></canvas>
+    </div>
+  </div><!-- game-board -->
+
+
+  <div class="results container">
+    <h1 id="result-text" class="win">Winner!</h1>
+    <button class="play-button reset">Play Again?</button>
+
+  </div><!-- Results-container -->
+
+
+  <footer>
+    <a href="https://olivers.cloud"><p>created by Oliver Ridsdale</p></a>
+  </footer>
+
+
+
+
+
+
+
+</body>
+</html>
